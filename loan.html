@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan emi calculator</title>
+    <link rel="stylesheet" href="loan.css">
+    <script src="loan.js"></script>
+</head>
+<body>
+   
+    <p class="signusp">
+        <form style="justify-content:center;">
+            <b>Calculate Loan Payments</b><br>
+            <br>
+            Enter loan Information:
+            <label for="amount" >Loan Amount in currency</label><br>
+            <input type="text" id="amount" name="amount" onchange="validamount()"><br>
+            <label for="rai" >Rate of interest in percentage</label><br>
+            <input type="text" id="rai" name="rai" onchange="validrai()"><br>
+            <label for="rep" >Repayment period in years:</label><br>
+            <input type="text" id="rep" name="rep" onchange="validrep()"><br>
+            <button type="submit" class="compute" onaction="validamount()">Compute</button>
+            <br>
+            <br>
+           
+
+            Payment Information
+            <label for="payment" >Monthly Payment:</label><br>
+            <input type="text" id="payment" name="payment"><br>
+            <label for="tp" >Total Payment:</label><br>
+            <input type="text" id="tp" name="tp"><br>
+            <label for="tip" >Total interest payment</label><br>
+            <input type="text" id="tip" name="tip"><br>
+            
+    
+          </form> 
+    </p>
+</body>
+</html>
